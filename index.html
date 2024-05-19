@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Test Fetch Firebase</title>
+  </head>
+  <body>
+    <div
+      class="w-full flex flex-col justify-center items-center"
+      id="container"
+    >
+       <div class="w-1/2 flex flex-col hidden" id="login-box">
+        <h1 class="text-lg">Please Login</h1>
+        <form action="" class="flex flex-col gap-2 my-5">
+          <input
+            type="email"
+            class="w-full border border-1 border-slate-400 px-2 py-1"
+            id="email"
+          />
+          <input
+            type="password"
+            class="w-full border border-1 border-slate-400 px-2 py-1"
+            id="password"
+          />
+          <button id="login">Login</button>
+        </form>
+      </div>
+      
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
